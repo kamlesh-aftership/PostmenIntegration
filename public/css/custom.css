@@ -1,0 +1,78 @@
+ body {
+        font-family: 'Roboto', serif;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: black;
+    color: white;
+}
+.active  {
+    background-color : black;
+}
+
+.custom-panel {
+    height: 100%;
+    background-color: #287ea9;
+}
+.custom-error-text{
+    color: #ed2227;
+}
+.custom-btn-color{
+    background-color:#30363e !important; 
+}
+
+.custom-header-border{
+    box-shadow: 0 1px 0 0 #e0e0e0 !important;
+}
+.custom-header-logo{
+    margin:35; 
+    max-width: 100%; 
+    width:100;
+    height:60;
+}
+.custom-header-color{
+    background-color:#287ea9 !important; 
+}
+.custom-login-header {
+    height: 100%;
+    background-color: #287ea9;
+}
+.custom-dashboard-text{
+    color: white;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #30363e !important;
+    border-color: #30363e !important;
+}
+
+.label-color{
+   color:black !important;
+}
+md-checkbox.md-checked.green .md-icon {
+ background-color: #30363e;
+}
+
+.change-color {
+    transition: 0.4s all;
+}
+.custom-cursor{
+    cursor:pointer;
+}
+md-select-value.md-select-placeholder {
+  color: black !important;
+  font-weight: bold;
+}
+.custom-logo-style{
+    margin: auto; 
+    max-width: 100%;
+    height:90%
+}
+
+.custom-header-title{
+    color: white;
+}
+.custom-whiteframe-style{
+    margin-top:20px;
+}

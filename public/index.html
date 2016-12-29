@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body ng-app="postmenApp" ng-cloak>
+<md-toolbar class="md-hue-3" >
+          <div class="md-toolbar-tools custom-header-color" style="box-shadow: 0 1px 0 0 #e0e0e0;">
+             <h2 style="margin-left: 500px;"><b>Postmen Integration</b></h2>
+              <span flex></span>
+          </div>
+    </md-toolbar>
+<div class="container" ng-controller="addShipperAccountDialog">
+    <form id="shipper_form" name="app_form" novalidate>
+        <table class="table">
+            <tr>
+                <th>SR.NO</th>
+                <th>Slug</th>
+                <th>Contact name</th>
+                <th>Email</th>
+                <th>Company name</th>
+                <th>Country</th>
+                <th> <button class="btn btn-danger" ng-click="openAddDialog()">Add Shipper</button>
+                </th>
+                <th>&nbsp;</th>
+            </tr>
+            <tbody>
+            <tr ng-repeat="shipperAccount in shipperAccountList">
+                <td>{{$index+1}}</td>
+                <td>{{shipperAccount.slug}}</td>
+                <td>{{shipperAccount.address.contact_name}}</td>
+                <td>{{shipperAccount.address.email}}</td>
+                <td>{{shipperAccount.address.company_name}}</td>
+                <td>{{shipperAccount.address.country}}</td>
+
+                <td>
+                    <button class="btn btn-danger" ng-click="remove(shipperAccount._id)">Remove</button>
+                    <button class="btn btn-warning" ng-click="openEditDialog(shipperAccount._id)">Edit</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="js/others/angular.min.js"></script>
+<script src="js/others/svg-assets-cache.js"></script>
+<script src="js/others/angular-material.min.js"></script>
+<script src="js/others/angular-animate.min.js"></script>
+<script src="js/others/angular-aria.min.js"></script>
+<script src="js/others/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+
+
+<script type="text/javascript" src="js/ng/app.js"></script>
+
+</body>
+</html>

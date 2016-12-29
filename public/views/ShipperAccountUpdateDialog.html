@@ -1,0 +1,246 @@
+<md-dialog aria-label="Nomenclature">
+    <form name="folderSettingForm" ng-submit="folderSettingForm.$valid" novalidate>
+        <md-toolbar class="">
+            <div class="md-toolbar-tools custom-panel">
+                <h2>Update Shipper Account</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon md-svg-src="images/close.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Slug</label>
+                        <input ng-model="shipperAccount.slug">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Description</label>
+                        <input ng-model="shipperAccount.description">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Timezone</label>
+                        <input ng-model="shipperAccount.timezone">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Country</label>
+                        <input ng-model="shipperAccount.address.country">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Contact name</label>
+                        <input ng-model="shipperAccount.address.contact_name">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Phone</label>
+                        <input ng-model="shipperAccount.address.phone">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Fax</label>
+                        <input ng-model="shipperAccount.address.fax">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Email</label>
+                        <input ng-model="shipperAccount.address.email">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Company name</label>
+                        <input ng-model="shipperAccount.address.company_name">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">City</label>
+                        <input ng-model="shipperAccount.address.city">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Street 1</label>
+                        <input ng-model="shipperAccount.address.street1">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Street 2</label>
+                        <input ng-model="shipperAccount.address.street2"  >
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Type</label>
+                        <input ng-model="shipperAccount.address.type"  >
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Postal code</label>
+                        <input ng-model="shipperAccount.address.postal_code"  >
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Street 3</label>
+                        <input ng-model="shipperAccount.address.street3"  >
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">State</label>
+                        <input ng-model="shipperAccount.address.state"  >
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-lg="">
+                        <label class=" label-color">Tax ID</label>
+                        <input ng-model="shipperAccount.address.tax_id">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                    </md-input-container>
+                </div>
+
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="column" layout-sm="column" layout-align="center center" layout-wrap>
+            <md-button class="md-raised md-primary custom-btn-color" type="submit" ng-click="update()">
+                Update
+            </md-button>
+        </md-dialog-actions>
+
+    </form>
+</md-dialog>
